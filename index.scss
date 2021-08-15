@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+* {
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+body {
+    height: 80vh;
+    background-color: hsl(225, 100%, 94%);
+
+    @media screen and (min-width: 376px) {
+        height: 100%;
+        background-image: url("images/pattern-background-desktop.svg");
+        background-repeat: no-repeat;
+        background-size: 1440px;
+        background-position: top center;
+    }
+}
+
+.container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media screen and (min-width: 376px) {
+        margin: 6em 0;
+    }
+}
+
+.wrapper {
+    width: 450px;
+    border-radius: 20px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    box-shadow: 0px 20px 20px rgba($color: #3d3fa1, $alpha: 0.1);
+    margin: 0 .8em;
+
+    .cardImage {
+        width: 100%;
+        object-fit: contain;
+    }  
+    
+    .title {
+        font-size: 1.5em;
+        margin-top: 1.3em;
+        font-weight: 900;
+    }
+    
+    .infoText {
+        margin: 0;
+        padding: 0 2.2em;
+        text-align: center;  
+        font-size: 1em;
+        color: hsl(224, 23%, 55%);
+
+        @media screen and (min-width: 376px) {
+            padding: 0 4em;
+        }
+    }
+    
+    .planWrapper {
+        margin: 1.5em 0 2em 0;
+        width: 78%;
+        background-color: hsl(225, 100%, 98%);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1em;
+        border-radius: 10px;
+        
+        .planText {
+            display: flex;
+            align-items: center;
+        }
+
+        .planPrice {
+            margin: 0 0 0 1em;
+            font-size: .95em;
+
+            h4 {
+                margin: .2em;
+            }
+
+            p {
+                margin: .2em;
+                color: hsl(224, 23%, 55%);
+            }
+        }
+
+        .planLink {
+            font-size: .9em;
+            font-weight: 700;
+
+            &:hover {
+                opacity: 85%;
+                transition: all 0.5s;
+            }
+        }
+    }
+
+    .proceedWrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 85%;
+        padding-bottom: 2em;
+        
+        .proceedBtn {
+            font-size: 1em;
+            width: 100%;
+            background-color: hsl(245, 75%, 52%);
+            color: white;
+            border: hidden;
+            border-radius: 10px;
+            padding: 1em;
+            font-weight: 700;
+            cursor: pointer;
+            box-shadow: 0px 15px 30px rgba($color: #3d3fa1, $alpha: 0.3);
+
+            &:hover {
+                transition: all .3s;
+                opacity: 85%;
+            }
+        }
+
+        .cancel {
+            border: hidden;
+            font-weight: 700;
+            background-color: transparent;
+            font-size: 1em;
+            cursor: pointer;
+            color: hsl(224, 23%, 55%);
+
+            &:hover {
+                transition: all .4s;
+                opacity: 70%;
+            }
+        }
+    }
+}
+
+.attribution {
+    text-align: center;
+
+    @media screen and (max-width: 376px) {
+        margin: 3em;
+    }
+}
+
