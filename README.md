@@ -32,7 +32,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Site](https://61186d8ed7c0cfa6ec2f06c6--relaxed-jackson-9eb910.netlify.app/)
+- Live Site URL: [Frontend mentor Order summary card](https://61186d8ed7c0cfa6ec2f06c6--relaxed-jackson-9eb910.netlify.app/)
 
 ## My process
 
