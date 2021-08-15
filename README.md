@@ -46,7 +46,7 @@ Users should be able to:
 ### What I learned
 
 I learned that you can add title to your images so it will be visible when hovering
-and that you should always use one <h1> tag because screen reader users can use keyboard shortcuts to navigate directly to the first <h1>, which, in principle, should allow them to jump directly to the main content of the web page. And more about box-shadows
+and that you should always use one h1 tag because screen reader users can use keyboard shortcuts to navigate directly to the first h1, which, in principle, should allow them to jump directly to the main content of the web page. And more about box-shadows
 
 ```css
 .wrapper {
